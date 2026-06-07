@@ -1,0 +1,19 @@
+# Ignorer les 4 dépôts VPS (ils ont leurs propres Git)
+alsadeal_vps1/
+alsadeal_vps2/
+alsadeal_vps3/
+alsadeal_vps4-/
+
+# Ignorer les fichiers système Windows
+Thumbs.db
+desktop.ini
+
+# Ignorer les fichiers VS Code personnels
+.vscode/settings.json
+
+# Ignorer node_modules si jamais
+node_modules/
+
+# Ignorer les fichiers sensibles
+.env
+.env.local
