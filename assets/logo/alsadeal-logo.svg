@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" width="500" height="160">
+  <defs>
+    <style>
+      .stork-body { fill: var(--body, #1a1a1a); }
+      .stork-white { fill: var(--white, #ffffff); }
+      .beak { fill: var(--red, #E30613); }
+      .leg { stroke: var(--red, #E30613); stroke-width: 3; stroke-linecap: round; fill: none; }
+      .wing-black { fill: var(--body, #1a1a1a); }
+      .wing-white { fill: var(--white, #ffffff); }
+      .wing-red { fill: var(--red, #E30613); }
+      .deals-tag { fill: var(--red, #E30613); }
+      .deals-ribbon { fill: var(--body, #1a1a1a); }
+      .eye { fill: var(--body, #1a1a1a); }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --body: #ffffff;
+          --white: #1a1a1a;
+          --red: #FF3B30;
+        }
+      }
+    </style>
+  </defs>
+
+  <!-- Dynamic: use CSS variables with fallback, controlled by host page -->
+  <g transform="translate(30, 10)">
+
+    <!-- === BACK WING === -->
+    <path class="wing-black" d="
+      M 250 50
+      C 230 20, 200 5, 160 8
+      C 170 15, 190 22, 210 35
+      C 230 42, 245 48, 250 50
+      Z
+    " opacity="0.85"/>
+
+    <!-- === BODY === -->
+    <ellipse class="stork-body" cx="210" cy="72" rx="58" ry="18" transform="rotate(-8, 210, 72)"/>
+
+    <!-- White belly patch -->
+    <ellipse class="stork-white" cx="218" cy="76" rx="35" ry="10" transform="rotate(-8, 218, 76)" opacity="0.9"/>
+
+    <!-- === NECK & HEAD === -->
+    <path class="stork-body" d="
+      M 250 64
+      C 270 58, 290 52, 305 56
+      C 315 58, 322 63, 328 68
+      L 322 65
+      C 312 60, 298 56, 280 60
+      C 265 64, 255 66, 250 64
+      Z
+    "/>
+
+    <!-- Head -->
+    <circle class="stork-body" cx="332" cy="66" r="9"/>
+
+    <!-- Eye -->
+    <circle class="eye" cx="335" cy="64" r="1.8"/>
+
+    <!-- === BEAK === (holding the deals) -->
+    <path class="beak" d="
+      M 340 63
+      L 390 58
+      C 392 58, 393 60, 392 62
+      L 340 68
+      Z
+    "/>
+
+    <!-- === DEALS (gift/tag in beak) === -->
+    <g transform="translate(380, 50)">
+      <!-- Gift box body -->
+      <rect class="deals-tag" x="0" y="4" width="18" height="16" rx="2"/>
+      <!-- Gift lid -->
+      <rect class="deals-ribbon" x="-1" y="1" width="20" height="5" rx="1.5"/>
+      <!-- Cross ribbon -->
+      <rect class="deals-ribbon" x="7" y="4" width="4" height="16" rx="1"/>
+      <!-- Bow -->
+      <path class="deals-ribbon" d="M 9 -1 C 5 -5, 1 -2, 4 2 C 6 3, 8 2, 9 0 Z" />
+      <path class="deals-ribbon" d="M 9 -1 C 13 -5, 17 -2, 14 2 C 12 3, 10 2, 9 0 Z" />
+    </g>
+
+    <!-- === FRONT WING === -->
+    <path class="wing-black" d="
+      M 230 55
+      C 200 15, 160 -5, 110 2
+      C 120 10, 140 18, 160 28
+      C 190 38, 215 48, 230 55
+      Z
+    "/>
+
+    <!-- Wing white highlight -->
+    <path class="wing-white" d="
+      M 220 50
+      C 195 25, 165 12, 130 14
+      C 155 22, 180 32, 205 44
+      C 212 47, 218 49, 220 50
+      Z
+    " opacity="0.85"/>
+
+    <!-- Wing red tip accent -->
+    <path class="wing-red" d="
+      M 145 12
+      C 130 6, 115 3, 105 4
+      C 108 6, 115 9, 125 12
+      C 132 14, 138 14, 145 12
+      Z
+    " opacity="0.7"/>
+
+    <!-- === LEGS === -->
+    <!-- Front leg -->
+    <path class="leg" d="M 185 85 C 170 100, 155 110, 145 115"/>
+    <path class="leg" d="M 145 115 L 135 118 M 145 115 L 150 125" stroke-width="2.5"/>
+
+    <!-- Back leg -->
+    <path class="leg" d="M 200 84 C 190 100, 180 112, 175 118"/>
+    <path class="leg" d="M 175 118 L 165 121 M 175 118 L 180 128" stroke-width="2.5"/>
+
+    <!-- === TAIL FEATHERS === -->
+    <path class="stork-body" d="
+      M 155 70
+      C 135 65, 115 72, 105 80
+      C 120 78, 135 78, 150 76
+      Z
+    "/>
+    <path class="stork-body" d="
+      M 155 74
+      C 130 78, 110 88, 108 95
+      C 120 88, 138 84, 152 80
+      Z
+    " opacity="0.7"/>
+
+    <!-- === WIND / SPEED LINES === -->
+    <path d="M 60 45 C 80 45, 90 42, 100 40" stroke="var(--red, #E30613)" stroke-width="2" fill="none" opacity="0.4" stroke-linecap="round"/>
+    <path d="M 50 55 C 75 55, 95 52, 110 50" stroke="var(--red, #E30613)" stroke-width="1.5" fill="none" opacity="0.3" stroke-linecap="round"/>
+    <path d="M 70 35 C 85 35, 95 33, 105 32" stroke="var(--red, #E30613)" stroke-width="1.5" fill="none" opacity="0.25" stroke-linecap="round"/>
+
+  </g>
+</svg>

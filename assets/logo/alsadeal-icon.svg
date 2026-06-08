@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <style>
+      .stork-body { fill: var(--body, #1a1a1a); }
+      .stork-white { fill: var(--white, #ffffff); }
+      .beak { fill: var(--red, #E30613); }
+      .deals-tag { fill: var(--red, #E30613); }
+      .deals-ribbon { fill: var(--body, #1a1a1a); }
+      .eye { fill: var(--body, #1a1a1a); }
+      .wing-tip { fill: var(--red, #E30613); }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --body: #ffffff;
+          --white: #1a1a1a;
+          --red: #FF3B30;
+        }
+      }
+    </style>
+  </defs>
+
+  <g transform="translate(10, 10)">
+    <!-- Back wing -->
+    <path class="stork-body" d="M 52 30 C 40 12, 25 4, 10 6 C 18 12, 30 20, 42 28 Z" opacity="0.85"/>
+    
+    <!-- Body -->
+    <ellipse class="stork-body" cx="46" cy="42" rx="22" ry="11" transform="rotate(-10, 46, 42)"/>
+    <ellipse class="stork-white" cx="50" cy="45" rx="14" ry="6" transform="rotate(-10, 50, 45)" opacity="0.85"/>
+    
+    <!-- Neck & Head -->
+    <path class="stork-body" d="M 60 38 C 68 32, 76 30, 82 33 L 80 31 C 74 28, 66 30, 58 36 Z"/>
+    <circle class="stork-body" cx="86" cy="35" r="6"/>
+    <circle class="eye" cx="88" cy="33" r="1.5"/>
+    
+    <!-- Beak -->
+    <path class="beak" d="M 91 33 L 104 30 C 105 30, 105 32, 104 33 L 91 36 Z"/>
+    
+    <!-- Deals gift -->
+    <g transform="translate(100, 24)">
+      <rect class="deals-tag" x="0" y="3" width="11" height="10" rx="1.5"/>
+      <rect class="deals-ribbon" x="0" y="1" width="11" height="3" rx="1"/>
+      <rect class="deals-ribbon" x="4" y="3" width="3" height="10" rx="0.8"/>
+    </g>
+    
+    <!-- Front wing -->
+    <path class="stork-body" d="M 46 32 C 34 10, 18 -2, 4 2 C 10 8, 20 14, 32 22 C 38 26, 42 29, 46 32 Z"/>
+    <path class="stork-white" d="M 42 30 C 33 16, 20 8, 10 9 C 18 16, 28 22, 36 28 Z" opacity="0.8"/>
+    <path class="wing-tip" d="M 14 6 C 8 3, 4 2, 3 3 C 5 5, 8 7, 12 8 C 13 7, 14 7, 14 6 Z" opacity="0.6"/>
+    
+    <!-- Legs -->
+    <path d="M 36 50 C 30 58, 24 64, 18 68" stroke="var(--red, #E30613)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 18 68 L 12 70 M 18 68 L 20 74" stroke="var(--red, #E30613)" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 42 49 C 38 56, 34 62, 30 66" stroke="var(--red, #E30613)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 30 66 L 24 68 M 30 66 L 32 72" stroke="var(--red, #E30613)" stroke-width="2" fill="none" stroke-linecap="round"/>
+    
+    <!-- Tail -->
+    <path class="stork-body" d="M 28 42 C 20 40, 12 44, 8 48 C 14 47, 20 46, 26 44 Z"/>
+    <path class="stork-body" d="M 28 44 C 18 46, 10 52, 8 56 C 14 50, 20 48, 26 46 Z" opacity="0.6"/>
+  </g>
+</svg>
