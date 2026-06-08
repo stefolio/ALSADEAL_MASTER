@@ -17,3 +17,11 @@ node_modules/
 # Ignorer les fichiers sensibles
 .env
 .env.local
+
+# Graphify output (régénéré automatiquement)
+graphify-out/
+
+# Assets binaires lourds (optionnel)
+assets/*.png
+assets/*.jpg
+assets/*.gif
