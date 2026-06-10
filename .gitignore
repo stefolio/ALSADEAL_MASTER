@@ -25,3 +25,5 @@ graphify-out/
 assets/*.png
 assets/*.jpg
 assets/*.gif
+
+.claude/
