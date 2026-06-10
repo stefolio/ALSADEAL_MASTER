@@ -1,0 +1,1 @@
+{"nodes": [{"id": "skill_create_md", "label": "Skill Create Command", "file_type": "document", "source_file": "ECC/docs/tr/commands/skill-create.md"}], "edges": [{"source": "skill_create_md", "target": "instinct_import_md", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "ECC/docs/tr/commands/skill-create.md"}], "hyperedges": []}

@@ -1,0 +1,1 @@
+{"nodes": [{"id": "go_build_cmd", "label": "/go-build Command", "file_type": "document", "source_file": "ECC/docs/tr/commands/go-build.md"}], "edges": [{"source": "go_build_cmd", "target": "go_build_resolver", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "ECC/docs/tr/commands/go-build.md"}], "hyperedges": []}

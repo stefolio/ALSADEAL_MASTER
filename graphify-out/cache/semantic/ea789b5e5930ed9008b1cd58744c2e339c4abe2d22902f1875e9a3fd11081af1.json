@@ -1,0 +1,1 @@
+{"nodes": [{"id": "go_review_cmd", "label": "/go-review Command", "file_type": "document", "source_file": "ECC/docs/tr/commands/go-review.md"}], "edges": [{"source": "go_review_cmd", "target": "go_reviewer", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "ECC/docs/tr/commands/go-review.md"}], "hyperedges": []}

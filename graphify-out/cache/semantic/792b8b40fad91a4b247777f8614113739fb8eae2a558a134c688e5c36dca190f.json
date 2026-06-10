@@ -1,0 +1,1 @@
+{"nodes": [{"id": "tdd_md", "label": "TDD Command", "file_type": "document", "source_file": "ECC/docs/tr/commands/tdd.md"}], "edges": [{"source": "tdd_md", "target": "plan_md", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "ECC/docs/tr/commands/tdd.md"}], "hyperedges": []}

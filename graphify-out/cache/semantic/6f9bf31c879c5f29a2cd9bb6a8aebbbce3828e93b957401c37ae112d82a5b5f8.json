@@ -1,0 +1,1 @@
+{"nodes": [{"id": "java_reviewer", "label": "Java Reviewer Agent", "file_type": "code", "source_file": "ECC/docs/tr/agents/java-reviewer.md"}], "edges": [{"source": "java_reviewer", "target": "security_reviewer", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "ECC/docs/tr/agents/java-reviewer.md"}], "hyperedges": []}

@@ -1,0 +1,1 @@
+{"nodes": [{"id": "kotlin_reviewer", "label": "Kotlin Reviewer Agent", "file_type": "code", "source_file": "ECC/docs/tr/agents/kotlin-reviewer.md"}], "edges": [{"source": "kotlin_reviewer", "target": "security_reviewer", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "ECC/docs/tr/agents/kotlin-reviewer.md"}], "hyperedges": []}
